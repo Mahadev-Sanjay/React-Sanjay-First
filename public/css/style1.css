@@ -1,0 +1,81 @@
+
+.error { color: red; display: none; }
+.error-message { color: red; display: none; }
+input#remark-1{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.label-input-group {
+    position: relative;
+    min-width: 100%;
+    margin: 0;
+    width: 50%;
+}
+.label-input-group label.input-label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #F98412;
+    border:1px solid #F98412;
+    color:#fff;
+    padding: 1px 5px;
+    font-size: 14px;
+    line-height: 17px;
+    z-index: 1;
+
+}
+.label-input-group input {
+    font-size: 18px;
+    line-height: 20px;
+    padding: 19px 16px 19px 16px;
+    height: auto;
+    border: 1px solid #d8d8d8;
+    z-index: 1;
+}
+@media (max-width: 768px) {
+    div.row, label.text-right{
+        flex-wrap: wrap !important;
+	margin-left:0rem !important;
+	margin-right:0rem !important;
+	text-align:left !important;
+    }
+}
+@media (max-width: 768px) {
+    div.card#card1, #search{
+	margin-left:0.5rem !important;
+	margin-right:0.5rem !important;
+    }
+}
+@media (max-width: 768px) {
+    .container-fluid > .row > .col-lg-6{
+	text-align:center !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .flex-nowrap{
+        flex-wrap: wrap !important;
+    }
+}
+@media (max-width: 992px) {
+	.row#buttonSearch-1{
+		display:flex;
+	    
+	    justify-content: center !important;
+	    
+    }
+}
+@media (max-width: 576px) {
+	.text-center{
+		
+	    text-align: left !important;
+	    margin-left:1.5rem !important;
+	    
+    }
+}
+
+	.selected { background-color: lightblue; }
+	.approved { background-color: lightgreen; }
+    .rejected { background-color: lightcoral; }
+	.remitLink { background-color: lightcoral; }
