@@ -4,11 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import $ from 'jquery';
 import "jquery-ui-dist/jquery-ui";
-import { useEffect, useRef, useState } from "react";
+import { useEffect} from "react";
+import DynamicDropdownA from "./components/DynamicDropdownA";
+import React from "react";
 
 function App() {
 
-  
+    
+
+   
+    
+
         useEffect(() => {
             
         
@@ -175,12 +181,12 @@ $("#reDirectpage4").on('click', function(){
 
 
     return (
-
+<>
 
 
 <div className="" id="body-id">
     
-    
+
     
     <div className="wrapper">
         
@@ -324,13 +330,15 @@ $("#reDirectpage4").on('click', function(){
 </div>
 <div className="text-success text-center d-none mb-2" id="approved" style={{fontSize: "12px"}}>Request has been approved successfully</div>
 <div className="text-danger text-center d-none mb-2" id="rejected" style={{fontSize: "12px"}}>Request has been rejected successfully</div>
+<DynamicDropdownA />
+
 <form id="myForm1">
 	    <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 
 		  <div className="row col-sm-12 col-md-12 col-lg-6 flex-nowrap mb-3" id="myForm">
 		     
                                 <div className="row mb-3">
-                                    <label className="control-label text-right col-md-5 col-lg-4" for="scheme-type">Scheme Type: <span style={{color:"red"}}>*</span></label>
+                                    {/*<label className="control-label text-right col-md-5 col-lg-4" for="scheme-type">Scheme Type: <span style={{color:"red"}}>*</span></label>
                                     <div className="col-md-5 col-lg-8">
                                         <select className="form-control form-control-sm" id="scheme-type">
                                 <option className="text-center" select="" value=""> -- Select -- </option>
@@ -339,12 +347,13 @@ $("#reDirectpage4").on('click', function(){
                                 <option value="State Govt. Scheme-2">State Govt. Scheme-2</option>
 
                             </select>
-			    <div id="error-message"  className="text-danger error" style={{fontSize:"12px"}}>Please select a valid option.</div>
-                                    </div>
+			    
+                                    </div>*/}
+                                    <div id="error-message"  className="text-danger error" style={{fontSize:"12px"}}>Please select a valid option.</div>
                                 </div>
 
                                 <div className="row mb-3">
-                                    <label className="control-label text-right col-md-5 col-lg-4" for="scheme">Scheme: <span style={{color:"red"}}>*</span></label>
+                                    {/*<label className="control-label text-right col-md-5 col-lg-4" for="scheme">Scheme: <span style={{color:"red"}}>*</span></label>
                                     <div className="col-md-5 col-lg-8">
                                         <select className="form-control form-control-sm" id="scheme">
                                 <option className="text-center" select="" value=""> -- Select -- </option>
@@ -353,8 +362,9 @@ $("#reDirectpage4").on('click', function(){
                                 <option value="BFST Test Scheme [BR180]-2">BFST Test Scheme [BR180]-2</option>
 
                             </select>
-			    <div id="error-message1" className="text-danger error" style={{fontSize:"12px"}}>Please select a valid option.</div>
-                                    </div>
+			    
+                                    </div>*/}
+                                    <div id="error-message1" className="text-danger error" style={{fontSize:"12px"}}>Please select a valid option.</div>
                                 </div>
 		     
 
@@ -370,6 +380,8 @@ $("#reDirectpage4").on('click', function(){
 
 	       </div>
 </form>
+
+
 
 			
 	    
@@ -532,6 +544,8 @@ $("#reDirectpage4").on('click', function(){
     <script src="src/js/custom.js"></script>
     
 </div>
+</>
+        
 
 
   );
