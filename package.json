@@ -11,6 +11,7 @@
     "jquery": "^3.7.1",
     "jquery-clock-timepicker": "^2.6.5",
     "jquery-ui-dist": "^1.13.3",
+    "lucide-react": "^0.484.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
     "react-dom": "^19.0.0",

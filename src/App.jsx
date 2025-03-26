@@ -6,6 +6,7 @@ import $ from 'jquery';
 import "jquery-ui-dist/jquery-ui";
 import { useEffect} from "react";
 import DynamicDropdownA from "./components/DynamicDropdownA";
+import Sidebar from "./components/Sidebar";
 import React from "react";
 
 function App() {
@@ -186,9 +187,9 @@ $("#reDirectpage4").on('click', function(){
 
 <div className="" id="body-id">
     
-
+<Sidebar />
     
-    <div className="wrapper">
+    {/*<div className="wrapper">
         
         <div className="iq-sidebar sidebar-default ">
             <div className="iq-sidebar-logo d-flex align-items-center">
@@ -233,7 +234,7 @@ $("#reDirectpage4").on('click', function(){
                 <div className="pt-5 pb-2"></div>
             </div>
         </div>
-    </div>
+    </div>*/}
 
     <div className="pt-5 pb-2"></div>
     
