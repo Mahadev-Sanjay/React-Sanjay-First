@@ -6,6 +6,7 @@ import $ from 'jquery';
 import "jquery-ui-dist/jquery-ui";
 import { useEffect} from "react";
 import DynamicDropdownA from "./components/DynamicDropdownA";
+import MultiDropList from "./components/MultiDropList";
 import Sidebar from "./components/Sidebar";
 import React from "react";
 
@@ -186,7 +187,7 @@ $("#reDirectpage4").on('click', function(){
 
 
 <div className="" id="body-id">
-    
+   
 <Sidebar />
     
     {/*<div className="wrapper">
@@ -236,7 +237,7 @@ $("#reDirectpage4").on('click', function(){
         </div>
     </div>*/}
 
-    <div className="pt-5 pb-2"></div>
+    
     
     <div className="iq-top-navbar fixed">
         <div className="iq-navbar-custom">
@@ -315,9 +316,9 @@ $("#reDirectpage4").on('click', function(){
             </nav>
         </div>
     </div>
-    <div className="content-page pt-1 mt-4">
-        <div className="container-fluid">
-	    <div id="card mb-2"
+    <div className="content-page pt-1 mt-5">
+        <div className="container-fluid mt-4">
+	    <div id="card mb-5"
 	      style={{ border: "2px solid white", borderTopLeftRadius: "0.8rem", borderTopRightRadius: "0.8rem" }}>
 	       <div className="card-header p-0 d-flex" style={{ flexDirection: "column" }}>
                     <div className="header-title p-1 pl-3" style={{ width: "100%", borderTopLeftRadius: "0.7rem", borderTopRightRadius: "0.7rem", background: "linear-gradient(117.76deg, rgba(255, 255, 255, 0.7) -7.21%, rgba(255, 255, 255, 0.5) 118.08%)" }}>
@@ -332,7 +333,7 @@ $("#reDirectpage4").on('click', function(){
 <div className="text-success text-center d-none mb-2" id="approved" style={{fontSize: "12px"}}>Request has been approved successfully</div>
 <div className="text-danger text-center d-none mb-2" id="rejected" style={{fontSize: "12px"}}>Request has been rejected successfully</div>
 <DynamicDropdownA />
-
+<MultiDropList />
 <form id="myForm1">
 	    <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 
@@ -543,7 +544,7 @@ $("#reDirectpage4").on('click', function(){
     
     
     <script src="src/js/custom.js"></script>
-    
+
 </div>
 </>
         

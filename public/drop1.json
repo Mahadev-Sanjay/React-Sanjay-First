@@ -1,0 +1,37 @@
+{
+  "categories": [
+    { "id": "State-Govt-Scheme", "name": "State-Govt-Scheme" },
+    { "id": "BFST-Test-Scheme", "name": "BFST-Test-Scheme" }
+  ],
+  "subcategories": {
+    "State-Govt-Scheme": [
+      { "id": "State Govt. Scheme-1", "name": "State Govt. Scheme-1" },
+      { "id": "State Govt. Scheme-2", "name": "State Govt. Scheme-2" },
+      { "id": "State Govt. Scheme-3", "name": "State Govt. Scheme-3" },
+      { "id": "State Govt. Scheme-4", "name": "State Govt. Scheme-4" },
+      { "id": "State Govt. Scheme-5", "name": "State Govt. Scheme-5" },
+      { "id": "State Govt. Scheme-6", "name": "State Govt. Scheme-6" },
+      { "id": "State Govt. Scheme-7", "name": "State Govt. Scheme-7" },
+      { "id": "State Govt. Scheme-8", "name": "State Govt. Scheme-8" },
+      { "id": "State Govt. Scheme-9", "name": "State Govt. Scheme-9" },
+      { "id": "State Govt. Scheme-10", "name": "State Govt. Scheme-10" },
+      { "id": "State Govt. Scheme-11", "name": "State Govt. Scheme-11" },
+      { "id": "State Govt. Scheme-12", "name": "State Govt. Scheme-12" }
+
+    ],
+    "BFST-Test-Scheme": [
+      { "id": "BFST Test Scheme [BR180]-1", "name": "BFST Test Scheme [BR180]-1" },
+      { "id": "BFST Test Scheme [BR180]-2", "name": "BFST Test Scheme [BR180]-2" },
+      { "id": "BFST Test Scheme [BR180]-3", "name": "BFST Test Scheme [BR180]-3" },
+      { "id": "BFST Test Scheme [BR180]-4", "name": "BFST Test Scheme [BR180]-4" },
+      { "id": "BFST Test Scheme [BR180]-5", "name": "BFST Test Scheme [BR180]-5" },
+      { "id": "BFST Test Scheme [BR180]-6", "name": "BFST Test Scheme [BR180]-6" },
+      { "id": "BFST Test Scheme [BR180]-7", "name": "BFST Test Scheme [BR180]-7" },
+      { "id": "BFST Test Scheme [BR180]-8", "name": "BFST Test Scheme [BR180]-8" },
+      { "id": "BFST Test Scheme [BR180]-9", "name": "BFST Test Scheme [BR180]-9" },
+      { "id": "BFST Test Scheme [BR180]-10", "name": "BFST Test Scheme [BR180]-10" },
+      { "id": "BFST Test Scheme [BR180]-11", "name": "BFST Test Scheme [BR180]-11" },
+      { "id": "BFST Test Scheme [BR180]-12", "name": "BFST Test Scheme [BR180]-12" }
+    ]
+  }
+}
