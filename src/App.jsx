@@ -4,11 +4,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import $ from 'jquery';
 import "jquery-ui-dist/jquery-ui";
-import { useEffect} from "react";
+import {useEffect} from "react";
 import DynamicDropdownA from "./components/DynamicDropdownA";
 import MultiDropList from "./components/MultiDropList";
 import Sidebar from "./components/Sidebar";
 import React from "react";
+import DynamicTable1 from "./components/DynamicTable1";
+import ThemeSwitcher from './components/ThemeSwitcher';
 
 function App() {
 
@@ -18,10 +20,8 @@ function App() {
     
 
         useEffect(() => {
-            
-        
-        
-            
+             
+
                 $("#buttonSearch-1").on('click', function(event) {
                     let isValid = true;
     
@@ -310,6 +310,7 @@ $("#reDirectpage4").on('click', function(){
                                     </div>
                                 </div>
                             </li>
+                            <li className="nav-item nav-icon dropdown caption-content"><ThemeSwitcher /></li>
                         </ul>
                     </div>
                 </div>
@@ -393,7 +394,8 @@ $("#reDirectpage4").on('click', function(){
 		   <div className="card-body p-2">
                         <div className="col-sm-12 col-md-auto">
                             <div className="overflow-auto">
-                                <table id="table-1" className="table w-100 tableintrest table-bordered bg-white text-center mb-1 table-hover table-striped">
+         
+                                {/*<table id="table-1" className="table w-100 tableintrest table-bordered bg-white text-center mb-1 table-hover table-striped">
                                     <thead>
                                         <tr>
                                             <th>Scheme</th>
@@ -463,16 +465,21 @@ $("#reDirectpage4").on('click', function(){
                                             <td className="text-center remit" id="remit-4"><a className="remitLink" style={{ display:"none" }} href="#sanjay">Remit Interest</a></td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </table>*/}
+                                
+                                <DynamicTable1 />
                             </div>
                         </div>
+
+
+
 		   </div>
             </div>
 	       </div>
 		  </div>
 	 
 	       </div>
-	       <div className="modal fade" id="detailsaved" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+	       {/*<div className="modal fade" id="detailsaved" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
                 tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
@@ -514,7 +521,7 @@ $("#reDirectpage4").on('click', function(){
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*/}
              </div>
     <footer className="iq-footer">
         <div className="container-fluid">

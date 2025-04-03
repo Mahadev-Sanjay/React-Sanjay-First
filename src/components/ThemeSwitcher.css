@@ -1,0 +1,72 @@
+
+
+/* ThemeSwitcher.css */
+
+.theme-switcher {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .theme-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .theme-menu {
+    position: absolute;
+    top: 40px;
+    left: -1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1000;
+  }
+  
+  .theme-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 14px;
+  }
+  
+  .light-mode {
+    background: #f4f4f4;
+    color: black;
+  }
+  
+  .dark-mode {
+    background: #333;
+    color: white;
+  }
+  
+  .blue-mode {
+    background: #007bff;
+    color: white;
+  }
+  
+  .green-mode {
+    background: #28a745;
+    color: white;
+  }
+  
+  .orange-mode {
+    background: #ff851b;
+    color: white;
+  }
+  
+  .lightblue-mode {
+    background: #5bc0de;
+    color: white;
+  }
+  
+  .theme-btn:hover {
+    opacity: 0.8;
+  }
+  
