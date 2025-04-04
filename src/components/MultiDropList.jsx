@@ -28,7 +28,7 @@ const MultiDropdown = () => {
 		  <div className="row col-sm-12 col-md-12 col-lg-6 flex-nowrap mb-3" id="myForm">
 		     
                                 <div className="row mb-3">
-                                    <label className="control-label text-right col-md-5 col-lg-4" for="scheme-type">Scheme Type: <span style={{color:"red"}}>*</span></label>
+                                    <label className="control-label text-right col-md-5 col-lg-4" htmlFor="scheme-type">Scheme Type: <span style={{color:"red"}}>*</span></label>
                                     <div className="col-md-5 col-lg-8">
                                         <select className="form-control form-control-sm" id="scheme-type" onChange={handleCategoryChange}>
                                 <option value="">--Select--</option>
@@ -45,7 +45,7 @@ const MultiDropdown = () => {
                                 </div>
                                {/* Subcategory Dropdown */}
                                 <div className="row mb-3">
-                                    <label className="control-label text-right col-md-5 col-lg-4" for="scheme">Scheme: <span style={{color:"red"}}>*</span></label>
+                                    <label className="control-label text-right col-md-5 col-lg-4" htmlFor="scheme">Scheme: <span style={{color:"red"}}>*</span></label>
                                     <div className="col-md-5 col-lg-8">
                                         <select className="form-control form-control-sm" id="scheme" disabled={!selectedCategory}>
                                 <option value="">--Select--</option>

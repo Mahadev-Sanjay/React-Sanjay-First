@@ -285,9 +285,9 @@ $("#reDirectpage4").on('click', function(){
                                         <h6 className="mb-0 line-height"> PFMS USER
                                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2"
                                                 viewBox="0 0 20 20" fill="currentColor" height="20px" width="20px">
-                                                <path fill-rule="evenodd"
+                                                <path fillRule="evenodd"
                                                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                                    clip-rule="evenodd" />
+                                                    clipRule="evenodd" />
                                             </svg>
                                         </h6>
                                     </div>
@@ -300,7 +300,7 @@ $("#reDirectpage4").on('click', function(){
                                             <a href="#sanjay" className="list-group-item list-group-item-action">
                                                 Login History</a>
                                             <a href="#sanjay" className="list-group-item list-group-item-action disabled"
-                                                tabindex="-1" aria-disabled="true">Change Password
+                                                tabIndex="-1" aria-disabled="true">Change Password
                                             </a>
                                             <a href="#sanjay" className="list-group-item list-group-item-action active"
                                                 aria-current="true">
@@ -329,7 +329,7 @@ $("#reDirectpage4").on('click', function(){
             <div className="card mt-5 ml-5 mr-5" style={{border:"1px solid #F98412"}} id="card1">
 	      
 <div className="label-input-group mb-5 validBorder">
-<label className="input-label mb-5" for="interest-earned">Interest Earned In Scheme</label>
+<label className="input-label mb-5" htmlFor="interest-earned">Interest Earned In Scheme</label>
 </div>
 <div className="text-success text-center d-none mb-2" id="approved" style={{fontSize: "12px"}}>Request has been approved successfully</div>
 <div className="text-danger text-center d-none mb-2" id="rejected" style={{fontSize: "12px"}}>Request has been rejected successfully</div>

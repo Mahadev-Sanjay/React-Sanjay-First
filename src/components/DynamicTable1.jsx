@@ -30,11 +30,11 @@ const DynamicTable1 = () => {
     const validateAndProceed = (action) => {
         if (!remark.trim()) {
             setError("Remark is required!");
-            return;
+            return; // Stop execution if remark is empty
         }
         setError("");
         setActionType(action);
-        setShowModal(false);
+        setShowModal(false); // Move this line inside the validation
         setShowConfirmModal(true);
     };
 
@@ -98,13 +98,13 @@ const DynamicTable1 = () => {
             </table>
 
             {/* Update Modal */}
-            <Modal show={showModal} onHide={() => setShowModal(false)}> 
+            <Modal show={showModal} onHide={() => setShowModal(false)} backdrop="static" keyboard={false}> 
                 <Modal.Header closeButton>
-                    <Modal.Title>Update Record</Modal.Title>
+                    <Modal.Title>Update Status for Approve and Reject</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form.Group>
-                        <Form.Label>Remark</Form.Label>
+                        <Form.Label>Approver Remark</Form.Label>
                         <Form.Control 
                             type="text" 
                             value={remark} 
@@ -123,9 +123,9 @@ const DynamicTable1 = () => {
             </Modal>
 
             {/* Confirmation Modal */}
-            <Modal show={showConfirmModal} onHide={() => setShowConfirmModal(false)}>
+            <Modal show={showConfirmModal} onHide={() => setShowConfirmModal(false)} backdrop="static" keyboard={false}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Confirm Action</Modal.Title>
+                    <Modal.Title>Confirm Action Massage</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Are you sure you want to {actionType} this record?</Modal.Body>
                 <Modal.Footer>

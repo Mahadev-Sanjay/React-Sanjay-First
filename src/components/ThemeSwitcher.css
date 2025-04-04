@@ -13,7 +13,18 @@
     margin-left: 10px;
   }
   
-  .theme-menu {
+  @keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.theme-menu {
     position: absolute;
     top: 40px;
     left: -1rem;
@@ -25,7 +36,11 @@
     flex-direction: column;
     gap: 5px;
     z-index: 1000;
-  }
+    
+    /* Apply animation */
+    animation: slideIn 0.5s ease-out forwards;
+}
+
   
   .theme-btn {
     padding: 8px 12px;
@@ -43,27 +58,27 @@
   
   .dark-mode {
     background: #333;
-    color: white;
+    color: black;
   }
   
   .blue-mode {
     background: #007bff;
-    color: white;
+    color: black;
   }
   
   .green-mode {
     background: #28a745;
-    color: white;
+    color: black;
   }
   
   .orange-mode {
     background: #ff851b;
-    color: white;
+    color: black;
   }
   
   .lightblue-mode {
     background: #5bc0de;
-    color: white;
+    color: black;
   }
   
   .theme-btn:hover {
