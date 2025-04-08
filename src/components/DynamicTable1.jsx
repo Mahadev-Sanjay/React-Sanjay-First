@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button, Modal, Form } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const DynamicTable1 = () => {
+const DynamicTable1 = ({ onSuccess }) => {
     const [data, setData] = useState([]);
     const [showModal, setShowModal] = useState(false);
     const [showConfirmModal, setShowConfirmModal] = useState(false);
@@ -50,7 +50,14 @@ const DynamicTable1 = () => {
         
         setShowConfirmModal(false);
         setMessage("Record saved successfully!");
-        setTimeout(() => setMessage(""), 3000);
+        
+        // Send message to App.jsx
+    if (onSuccess) {
+        const statusMessage = `Scheme "${selectedRow.scheme}" was ${status.toLowerCase()} successfully.`;
+        const alertType = actionType === "approve" ? "info" : "danger";
+        onSuccess(statusMessage, alertType);
+      }
+      setTimeout(() => setMessage(""), 3000);
     };
 
     return (

@@ -7,7 +7,7 @@ import React, {useState} from "react";
 
 const DynamicDropdownA = () => {
     // Sample dynamic options
-    const options = ["State Govt. Scheme", "BState Govt. Scheme-1", "State Govt. Scheme-2", "State Govt. Scheme-3", "State Govt. Scheme-4", "State Govt. Scheme-5", "State Govt. Scheme-6", "State Govt. Scheme-7"];
+    const options = ["State Govt. Scheme", "State Govt. Scheme-1", "State Govt. Scheme-2", "State Govt. Scheme-3", "State Govt. Scheme-4", "State Govt. Scheme-5", "State Govt. Scheme-6", "State Govt. Scheme-7"];
     const options1 = ["BFST Test Scheme [BR180]", "BFST Test Scheme [BR180]-1", "BFST Test Scheme [BR180]-2", "BFST Test Scheme [BR180]-3", "BFST Test Scheme [BR180]-4", "BFST Test Scheme [BR180]-5", "BFST Test Scheme [BR180]-6", "BFST Test Scheme [BR180]-7"];
   
     // State to store selected value
@@ -65,12 +65,7 @@ const DynamicDropdownA = () => {
 				
                             
 		   </div>
-		   {/*<div className="mb-3 d-flex flex-nowrap">
-                                    <div className="col-sm-12 col-md-12 col-lg-12 text-center">
-                                    
-                                        <button id="buttonSearch-1" type="button" className="btn py-1 btn-sm btn-primary btn-rounded font-12">Search</button>
-				    </div>
-                                </div>*/}
+		  
 
 	       </div>
 </form>
