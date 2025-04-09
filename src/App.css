@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.wrapper-menu.open {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+body.sidebar-main .iq-sidebar {
+  left: 0; /* show sidebar */
+}
